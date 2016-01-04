@@ -20,7 +20,7 @@ body {
   padding: 1em;
   z-index: 2;
   position: absolute;
-  margin-top: 150px;
+  margin-top: 250px;
   background-color: #c9f5f0;
   padding: 100px;
 
@@ -71,8 +71,10 @@ h3 {
       z-index: 4;
     position: absolute;
    margin-left: 80%;
-   padding: 20px;
+   border: 20px;
+   border-color: white;
 
 
 
 }
+

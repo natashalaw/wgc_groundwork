@@ -5,15 +5,18 @@
 
   <% @profile.each do |field, value| %>
     <div class="col-md-6">
-      <h4><%= field %></h4>
+      <h4><%= field.capitalize() %></h4>
      
       <p class="profile-value"><%= value %></p>
+
     </div>
+    
   <% end %>
 
   <div id="stats" class="box">
     <h3>Stats</h3>
-    <!-- TODO - Set the contents of this span with JavaScript -->
+    <!-- TODO - Set the contents of this span with JavaScript --> 
+
     <span id="word-count">0</span> words found.
   </div>
 
@@ -22,21 +25,29 @@
     <a href="/primes">My Prime Number Solution</a>
   </div>
 
-  <div class="box">
+  <div class="col-md-8">
     <h3>Edit Profile</h3>
 
     <form action="/update" method="POST">
       <fieldset>
-        <div class="form-group">
+        <div class="col-md-8">
+          
+    </form>
+    <BR>
+      <form action="/update" method="POST">
+      <fieldset>
+        <div class="col-md-6">
           <label for="trainee[about]">About</label>
           <input type="text" name="trainee[about]" value="<%= @profile["about"] %>"/>
         </div>
 
         <!-- TODO - Add more fields so that your profile can be edited -->
 
+
         <input type="submit" value="Update Profile" class="btn btn-primary" />
       </fieldset>
     </form>
+
   </div>
 <% else %>
   <div class="welcome">
@@ -51,6 +62,7 @@
 <script language="javascript">
   console.log("I am Javascript!");
 
+  var profile_values = document.getElementsByClassName('profile-value');
   var profile_values = document.getElementsByClassName('profile-value');
   var total_words = 0;
 
