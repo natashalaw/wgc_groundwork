@@ -6,15 +6,19 @@ body {
 }
 
 #logo {
-  text-align: center;
+  text-align: left;
 }
 
 #content {
   padding: 1em;
+  z-index: 2;
+  position: absolute;
+  margin-top: 50px;
+
 }
 
 .box {
-  border: 1px solid #999;
+  border: 0px solid #999;
   background: #FCFCFC;
   padding: 1em;
   margin-bottom: 0.5em;
@@ -26,6 +30,7 @@ body {
 
 h3 {
   font-size: 1.5em;
+
 }
 
 .error {
@@ -36,4 +41,18 @@ h3 {
   font-size: 1.5em;
 }
 
+
 /* TODO - Add your own styles here */
+ 
+.me1 {
+  font-size: 2em;
+  z-index: 5;
+  position: relative;
+  text-align: right;
+  margin-top: -70px; 
+  margin-right: 200px;
+}
+
+.profile-section box {
+  text-align: right;
+}
