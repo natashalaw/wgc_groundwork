@@ -2,18 +2,27 @@ body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #333;
+  color: #c9f5f0;
+  margin-bottom: 10%;
+  z-index: 6;
+  position: relative;
+
 }
 
 #logo {
   text-align: left;
+  margin-top: 2%;
+  z-index: 1;
+  position: absolute;
 }
 
 #content {
   padding: 1em;
   z-index: 2;
   position: absolute;
-  margin-top: 50px;
+  margin-top: 150px;
+  background-color: #c9f5f0;
+  padding: 100px;
 
 }
 
@@ -47,12 +56,23 @@ h3 {
 .me1 {
   font-size: 2em;
   z-index: 5;
-  position: relative;
-  text-align: right;
-  margin-top: -70px; 
-  margin-right: 200px;
+  position: absolute;
+  text-align: left;
+  margin-top: 100px; 
+  margin-left: 100px;
 }
 
 .profile-section box {
   text-align: right;
+  z-index: 3;
+}
+.imgDivpro {
+  margin-top: 20px;
+      z-index: 4;
+    position: absolute;
+   margin-left: 80%;
+   padding: 20px;
+
+
+
 }
